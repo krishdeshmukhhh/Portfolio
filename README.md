@@ -9,10 +9,7 @@ Build a stunning 3D developer portfolio using React, Three.js, Tailwind CSS, and
 - ⚙️ Tech Stack  
 - 🔋 Features  
 - ⚡ Quick Start  
-- 🔗 Assets & Models  
-- 📬 Contact Integration  
-- 🚀 Deployment  
-- 🧠 Learn More
+- 🚀 Installation
 
 ---
 
