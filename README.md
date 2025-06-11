@@ -1,12 +1,74 @@
-# React + Vite
+🚀 Interactive 3D Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Build a stunning 3D developer portfolio using React, Three.js, Tailwind CSS, and more. Inspired by JavaScript Mastery, but uniquely yours!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📋 **Table of Contents**
+- 🤖 Introduction  
+- ⚙️ Tech Stack  
+- 🔋 Features  
+- ⚡ Quick Start  
+- 🔗 Assets & Models  
+- 📬 Contact Integration  
+- 🚀 Deployment  
+- 🧠 Learn More
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🤖 Introduction
+
+This 3D Portfolio project is a fully interactive and immersive personal website. It's designed for developers, designers, or freelancers who want to showcase their skills with flair. Featuring animated 3D models, smooth transitions, and clean design, this portfolio makes a memorable first impression.
+
+Whether you're building it for yourself or learning modern web development, this is an ideal full-stack visual experience.
+
+---
+
+## ⚙️ Tech Stack
+
+The following technologies power this project:
+
+- ⚛ **React 19**
+- 🔥 **Vite** – Fast development and builds
+- 🎮 **Three.js** + **@react-three/fiber** – 3D rendering
+- 🧩 **@react-three/drei** – Useful helpers for Three.js
+- 🎨 **Tailwind CSS** – Utility-first styling
+- 🌀 **Framer Motion** – Smooth animations
+- 📊 **React CountUp** – Animated counters
+- 🧙 **GSAP** – Scroll-triggered animations
+
+---
+
+## 🔋 Features
+
+- ✨ Animated 3D scenes with model transitions
+- 🌙 Dark-mode-ready and mobile responsive
+- 🖼️ Realistic lighting and interactive elements
+- 🔢 Number animations with `react-countup`
+- 🎯 Micro-interactions for hover, click, and scroll
+- 📱 Optimized for both desktop and mobile
+- 🔗 Easily customizable sections (About, Projects, Contact)
+
+---
+
+## ⚡ Quick Start
+
+Follow these steps to set up and run the project locally.
+
+### 🔧 Prerequisites
+
+Ensure you have the following installed:
+
+- Git
+- Node.js (v16 or above)
+- npm
+
+### 🚀 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/krishdeshmukhhh/Portfolio.git
+cd Portfolio
+
+# Install dependencies
+npm install
