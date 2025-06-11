@@ -73,21 +73,22 @@ const logoIconsList = [
 
 const abilities = [
     {
-        imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Delivering high-quality results while maintaining attention to every detail.",
+        imgPath: "/images/debug.png",
+        title: "Resourceful Problem Solver",
+        desc: "Quick to diagnose and resolve issues using console logs, dev tools, and creative debugging strategies.",
     },
     {
-        imgPath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Keeping you updated at every step to ensure transparency and clarity.",
+        imgPath: "/images/fullstack.png",
+        title: "Full-Stack Versatility",
+        desc: "Experienced with frontend, backend, and cloud tools — building complete solutions from idea to deployment.",
     },
     {
-        imgPath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+        imgPath: "/images/growth.png",
+        title: "Detail-Oriented Learner",
+        desc: "Driven by curiosity and always seeking feedback to improve code quality, clarity, and performance.",
     },
 ];
+
 
 const techStackImgs = [
     {
