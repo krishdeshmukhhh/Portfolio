@@ -5,6 +5,9 @@ import LogoSection from "./sections/LogoSection.jsx";
 import FeatureCards from "./sections/FeatureCards.jsx";
 import ExperienceSection from "./sections/ExperienceSection.jsx";
 import TechStack from "./sections/TechStack.jsx";
+import Testimonials from "./sections/Testimonials.jsx";
+import Contact from "./sections/Contact.jsx";
+import Footer from "./sections/Footer.jsx";
 
 
 const App = () => {
@@ -17,6 +20,9 @@ const App = () => {
             <FeatureCards />
             <ExperienceSection />
             <TechStack />
+            {/*<Testimonials />*/}
+            <Contact />
+            <Footer />
         </>
     )
 }
