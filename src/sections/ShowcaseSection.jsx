@@ -49,14 +49,21 @@ const AppShowcase = () => {
                 <div className="showcaselayout">
                     <div ref={rydeRef} className="first-project-wrapper">
                         <div className="image-wrapper">
-                            <img src="/images/krishproject1.png" alt="Ryde App Interface" />
+                            <img src="/images/converso.png" alt="Converso" />
                         </div>
                         <div className="text-content">
                             <h2>
-                                A job interview preparation platform powered by Vapi AI Voice agents
+                                <a
+                                    href="https://github.com/krishdeshmukhhh/converso"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline hover:text-blue-400 transition"
+                                >
+                                    Converso is a voice-powered AI app built with Next.js and Vapi that helps users learn and explore topics through natural, real-time conversations.
+                                </a>
                             </h2>
                             <p className="text-white-50 md:text-xl">
-                                Built with Next.js for the user interface and backend logic, Firebase for authentication and data storage, styled with TailwindCSS and using Vapi's voice agents, PrepFlow is a website project designed to help you learn integrating AI models with your apps. The platform offers a sleek and modern experience for job interview preparation.
+                                Built with Next.js for a seamless frontend and backend experience, Converso leverages Supabase for real-time data handling, Clerk for secure authentication, and Vapi’s AI voice agents for natural language interactions. Styled with TailwindCSS and enhanced with shadcn/ui components, Converso is an AI-powered platform that transforms the way users engage in meaningful conversations to learn new topics, practice interviews, or explore ideas through voice-based interactions.
                             </p>
                         </div>
                     </div>
@@ -65,18 +72,36 @@ const AppShowcase = () => {
                         <div className="project" ref={libraryRef}>
                             <div>
                                 <img
-                                    src="/images/krishproject2.png"
-                                    alt="Library Management Platform"
+                                    src="/images/krishproject1.png"
+                                    alt="Prepflow"
                                 />
                             </div>
-                            <h2>Sorting Algorithm Visualizer</h2>
+                            <h2>
+                                <a
+                                    href="https://github.com/krishdeshmukhhh/prepflow"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline hover:text-blue-400 transition"
+                                >
+                                    A job interview preparation platform powered by Vapi AI Voice agents
+                                </a>
+                            </h2>
                         </div>
 
                         <div className="project" ref={ycDirectoryRef}>
                             <div>
-                                <img src="/images/krishproject3.png" alt="YC Directory App" />
+                                <img src="/images/krishproject2.png" alt="Sorting Algorithm Visualizer" />
                             </div>
-                            <h2>Doom Style Game</h2>
+                            <h2>
+                                <a
+                                    href="https://github.com/krishdeshmukhhh/SortingAlgorithmVisualizer"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline hover:text-blue-400 transition"
+                                >
+                                    Sorting Algorithm Visualizer
+                                </a>
+                            </h2>
                         </div>
                     </div>
                 </div>

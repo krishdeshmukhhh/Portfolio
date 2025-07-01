@@ -256,11 +256,6 @@ const socialImgs = [
     //     url: "",
     //     imgPath: "/images/fb.png",
     // },
-    // {
-    //     name: "x",
-    //     url: "",
-    //     imgPath: "/images/x.png",
-    // },
     {
         name: "github",
         url: "https://github.com/krishdeshmukhhh",
@@ -270,6 +265,11 @@ const socialImgs = [
         name: "linkedin",
         url: "https://www.linkedin.com/in/krish-deshmukh/",
         imgPath: "/images/linkedin.png",
+    },
+    {
+        name: "x",
+        url: "https://x.com/DeshmukhKrish",
+        imgPath: "/images/x.png",
     },
 ];
 
