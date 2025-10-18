@@ -49,22 +49,23 @@ const AppShowcase = () => {
                 <div className="showcaselayout">
                     <div ref={rydeRef} className="first-project-wrapper">
                         <div className="image-wrapper">
-                            <img src="/images/converso.png" alt="Converso" />
+                            <img src="/images/resuscan.png" alt="Resuscan" />
                         </div>
                         <div className="text-content">
                             <h2>
                                 <a
-                                    href="https://github.com/krishdeshmukhhh/converso"
+                                    href="https://github.com/krishdeshmukhhh/resuscan"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline hover:text-blue-400 transition"
                                 >
-                                    Converso is a voice-powered AI app built with Next.js and Vapi that helps users learn and explore topics through natural, real-time conversations.
-                                </a>
+                                    ResuScan is a full-stack, browser-based AI resume analyzer.</a>
                             </h2>
                             <p className="text-white-50 md:text-xl">
-                                Built with Next.js for a seamless frontend and backend experience, Converso leverages Supabase for real-time data handling, Clerk for secure authentication, and Vapi’s AI voice agents for natural language interactions. Styled with TailwindCSS and enhanced with shadcn/ui components, Converso is an AI-powered platform that transforms the way users engage in meaningful conversations to learn new topics, practice interviews, or explore ideas through voice-based interactions.
-                            </p>
+                                ResuScan is a full-stack, browser-based AI resume analyzer. Upload your resume, match it against job descriptions, and receive AI-driven feedback on how to improve your chances - all without leaving the browser.
+
+This project combines modern front-end tools like React, TypeScript, and Tailwind CSS with Puter.js, a powerful serverless SDK, to build a seamless, secure, and scalable app - no backend required.
+                                 </p>
                         </div>
                     </div>
 
@@ -90,16 +91,16 @@ const AppShowcase = () => {
 
                         <div className="project" ref={ycDirectoryRef}>
                             <div>
-                                <img src="/images/krishproject2.png" alt="Sorting Algorithm Visualizer" />
+                                <img src="/images/converso.png" alt="Converso" />
                             </div>
                             <h2>
                                 <a
-                                    href="https://github.com/krishdeshmukhhh/SortingAlgorithmVisualizer"
+                                    href="https://github.com/krishdeshmukhhh/converso"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline hover:text-blue-400 transition"
                                 >
-                                    Sorting Algorithm Visualizer
+                                    Converso is a voice-powered AI app built with Next.js and Vapi that helps users learn and explore topics through natural, real-time conversations.
                                 </a>
                             </h2>
                         </div>
