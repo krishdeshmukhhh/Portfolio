@@ -19,24 +19,24 @@ const NavBar = () => {
     return (
         <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
             <div className="inner">
-                <a className="logo" href="#hero">
+                <a className="logo cursor-target" href="#hero">
                     Krish Deshmukh
                 </a>
 
                 <nav className="desktop">
                     <ul>
                         {navLinks.map(({ link, name }) => (
-                            <li key={name} className="group">
+                            <li key={name} className="group cursor-target">
                             <a href={link}>
                                 <span>{name}</span>
-                                <span className="underline" />
+                                <span className="" />
                             </a>
                             </li>
                         ))}
                     </ul>
                 </nav>
 
-                <a href="#contact" className="contact-btn group">
+                <a href="#contact" className="contact-btn group cursor-target">
                     <div className="inner">
                         <span>Contact me</span>
                     </div>

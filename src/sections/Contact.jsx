@@ -93,7 +93,7 @@ const Contact = () => {
                                 </div>
 
                                 <button type="submit">
-                                    <div className="cta-button group">
+                                    <div className="cta-button group cursor-target">
                                         <div className="bg-circle" />
                                         <p className="text">
                                             {loading ? "Sending..." : "Send Message"}

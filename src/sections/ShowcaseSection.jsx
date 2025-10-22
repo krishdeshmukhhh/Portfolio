@@ -57,7 +57,7 @@ const AppShowcase = () => {
                                     href="https://github.com/krishdeshmukhhh/resuscan"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline hover:text-blue-400 transition"
+                                    className="underline hover:text-blue-400 transition cursor-target"
                                 >
                                     ResuScan is a full-stack, browser-based AI resume analyzer.</a>
                             </h2>
@@ -82,7 +82,7 @@ This project combines modern front-end tools like React, TypeScript, and Tailwin
                                     href="https://github.com/krishdeshmukhhh/prepflow"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline hover:text-blue-400 transition"
+                                    className="underline hover:text-blue-400 transition cursor-target"
                                 >
                                     A job interview preparation platform powered by Vapi AI Voice agents
                                 </a>
@@ -98,7 +98,7 @@ This project combines modern front-end tools like React, TypeScript, and Tailwin
                                     href="https://github.com/krishdeshmukhhh/converso"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline hover:text-blue-400 transition"
+                                    className="underline hover:text-blue-400 transition cursor-target"
                                 >
                                     Converso is a voice-powered AI app built with Next.js and Vapi that helps users learn and explore topics through natural, real-time conversations.
                                 </a>

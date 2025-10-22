@@ -4,6 +4,7 @@ import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
 import { useGSAP } from '@gsap/react'
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
+import TargetCursor from '../components/TargetCursor.jsx';
 
 const Hero = () => {
     useGSAP(() => {
@@ -23,10 +24,20 @@ const Hero = () => {
     })
 
     return (
+
+
+            
+        
         <section id="hero" className="relative overflow-hidden">
+            <TargetCursor 
+                spinDuration={2}
+                hideDefaultCursor={true}
+            /> 
+            
             <div className="absolute top-0 left-0 z-10">
                 <img src="/images/bg.png" alt="background"/>
             </div>
+            
 
             <div className="hero-layout">
             {/*LEFT: HERO CONTENT */}
@@ -58,7 +69,7 @@ const Hero = () => {
                             Hi, I'm Krish, a developer based in the US with a passion for code.
                         </p>
                         <Button
-                            className="md:w-80 md:h-16 w-60 h-12"
+                            className="md:w-80 md:h-16 w-60 h-12 cursor-target"
                             id="button"
                             text="Check out my work"
                         />
@@ -76,6 +87,7 @@ const Hero = () => {
             <AnimatedCounter />
 
         </section>
+
     )
 }
 export default Hero
