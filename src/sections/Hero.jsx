@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
 import TargetCursor from '../components/TargetCursor.jsx';
+import { useState, useEffect } from "react";
 
 const Hero = () => {
     useGSAP(() => {
@@ -23,17 +24,73 @@ const Hero = () => {
         )
     })
 
+    const [hasFinePointer, setHasFinePointer] = useState(false);
+
+    useEffect(() => {
+        if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+            setHasFinePointer(false);
+            return;
+        }
+
+        const mqFine = window.matchMedia("(pointer: fine)");
+        const mqCoarse = window.matchMedia("(pointer: coarse)");
+
+        const isTouchCapable = () => {
+            // common touch checks
+            if (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) return true;
+            if ('ontouchstart' in window) return true;
+            if (mqCoarse.matches) return true;
+            return false;
+        };
+
+        const update = () => {
+            const fine = !!mqFine.matches;
+            const touch = isTouchCapable();
+            setHasFinePointer(fine && !touch);
+        };
+
+        update();
+
+        const listener = () => update();
+        if (mqFine.addEventListener) {
+            mqFine.addEventListener("change", listener);
+            mqCoarse.addEventListener("change", listener);
+        } else {
+            mqFine.addListener(listener);
+            mqCoarse.addListener(listener);
+        }
+
+        // If a touchstart happens, treat the device as touch-capable
+        const onFirstTouch = () => {
+            update();
+            window.removeEventListener("touchstart", onFirstTouch);
+        };
+        window.addEventListener("touchstart", onFirstTouch, { passive: true, once: true });
+        window.addEventListener("resize", listener);
+
+        return () => {
+            if (mqFine.removeEventListener) {
+                mqFine.removeEventListener("change", listener);
+                mqCoarse.removeEventListener("change", listener);
+            } else {
+                mqFine.removeListener(listener);
+                mqCoarse.removeListener(listener);
+            }
+            window.removeEventListener("touchstart", onFirstTouch);
+            window.removeEventListener("resize", listener);
+        };
+    }, []);
+
     return (
 
 
             
         
         <section id="hero" className="relative overflow-hidden">
-            <TargetCursor 
-                spinDuration={2}
-                hideDefaultCursor={true}
-            /> 
-            
+            {hasFinePointer && (
+                <TargetCursor spinDuration={2} hideDefaultCursor={true} />
+            )}
+
             <div className="absolute top-0 left-0 z-10">
                 <img src="/images/bg.png" alt="background"/>
             </div>
